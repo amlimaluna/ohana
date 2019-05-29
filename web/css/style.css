@@ -1,0 +1,134 @@
+* {
+	font-family: 'Comfortaa', cursive !important;
+}
+.logoohana {
+	width: 100px;
+}
+
+.fundocc {
+background: #ffffff url('images/img.jpg') no-repeat center center;
+}
+
+.text-blue {
+	color: #46BABA;
+}
+
+.text-yellow {
+	color: #ffc107;
+}
+
+.bg-yellow {
+	background: #F5E82B;
+}
+
+.bg-blue {
+	background: #46BABA;
+}
+
+.bg-bluea {
+	background: rgba(0, 170, 204, 0.4);
+}
+
+.gray {
+	background: #EEE;
+}
+
+.wds {
+	width: 33%;
+}
+
+.wds5 {
+	width: 50%;
+}
+
+.btn-icone {
+
+}
+
+.icone {
+	width: 12%;
+}
+.iconecat {
+    width: 54px;
+}
+
+.h-1 {
+	margin-top: 50px;
+	height: 1px;
+	border-width:2px;
+	border-style: dotted;
+}
+.bordere {
+	border-width: thick !important;
+}
+
+.b-shadow {
+	box-shadow: 1px 1px 5px;
+}
+
+.btn-doar {
+	right: 0%;
+	bottom: 0%;
+	margin-right: 20px;
+	margin-bottom: 70px;
+	position: fixed;
+	z-index: 9999;
+}
+
+.menu-wrapper {
+	position: relative;
+	max-width: 500px;
+	height: 100px; // hide the scroll bar
+	margin: 1em auto;
+	border: 1px solid black;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.menu	{
+	height: 120px; // hide the scroll bar
+	background: #f3f3f3;
+	box-sizing: border-box;
+	
+	white-space: nowrap;
+	overflow-x: auto;
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+	
+	.item {
+		display: inline-block;
+		width: 100px;
+		height: 100%;
+		outline: 1px dotted gray;
+		padding: 1em;
+		box-sizing: border-box;
+	}
+}
+
+.paddles {
+}
+.paddle {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 3em;
+}
+.left-paddle {
+	left: 0;
+}
+.right-paddle {
+	right: 0;
+}
+.hidden {
+	display: none;
+}
+
+.print {
+	margin: auto;
+	max-width: 500px;
+	
+	span {
+		display: inline-block;
+		width: 100px;
+	}
+}
