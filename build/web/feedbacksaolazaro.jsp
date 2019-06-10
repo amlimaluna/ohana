@@ -36,16 +36,16 @@
                                       
                         <div>
 				<ul  class="nav m-2">
-				  
+				  <li class="nav-item d-none d-md-block">
+				    <a class="nav-link  text-warning" href="doacoes.jsp">Doar</a>
+				  </li>
 				  <li class="nav-item">
 				    <a class="nav-link text-blue" href="novoUsuario.jsp">cadastrar</a>
 				  </li>
 				  <li class="nav-item">
 				    <a class="rounded nav-link bg-blue text-light" href="login.jsp">login</a>
 				  </li>
-                                  <li class="rounded nav-item d-none bg-warning d-md-block px-3 ml-4">
-				    <a class="nav-link  text-light" href="doacoes.jsp">Doar</a>
-				  </li>
+                                  
 				</ul>
 			</div>
                         
@@ -61,16 +61,19 @@
 			</div>
                                
 				<ul  class="nav m-2">
+                                    <li class="nav-item d-none d-md-block">
+				    <a class="nav-link  text-warning" href="doacoes.jsp">Doar</a>
+				  </li>
                                   <li class="nav-item nav-brand d-none d-md-block">
                                     <a class="nav-link text-blue" href="VerRecompensasServlet">Recompensas</a>
                                   </li>
                                   <li class="nav-item nav-brand d-none d-md-block">
-                                    <a class="nav-link text-blue" href="VerDoacaoUsuarioServlet">Agendamentos</a>
+                                    <a class="nav-link text-blue" href="VerDoacaoUsuarioServlet">Minhas Doações</a>
                                   </li>
 				  <li class="nav-brand">
 				  </li>
 				  <li class="nav-item nav-link nav-brand text-blue">
-				<div class="dropdown">
+					  	<div class="dropdown">
 						  <a class="dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						   Teste                                       
 						  </a>
@@ -79,15 +82,13 @@
 						    <button class="dropdown-item" type="button"> <a class="text-blue" href="VerUsuarioServlet"> Perfil </a></button>
 						    <button class="dropdown-item" type="button"> <a class="text-blue" href="LogoutServlet"> Sair</a></button>
 						  </div>
-                                                 </div>
+                                                 </div>   
                                   </li>
 
-                                                  <li class="rounded nav-item d-none bg-warning d-md-block px-3 ml-4">
-                                                    <a class="nav-link  text-light" href="doacoes.jsp">Doar</a>
-                                                  </li>
+                                                  
 					
 				</ul>
-                                                            </div>
+                                                    
                                    
                                      
                                             </nav>
@@ -98,26 +99,27 @@
 		    <a class="nav-link text-blue" href="VerRecompensasServlet">Recompensas</a>
 		  </li>
 		  <li class="nav-item mx-auto wds5">
-		    <a class="nav-link text-blue" href="VerDoacaoUsuarioServlet">Agendamentos</a>
+		    <a class="nav-link text-blue" href="VerDoacaoUsuarioServlet">Minhas Doações</a>
 		  </li>
 		</ul>
                                   <% } %> 
                                   	
         
-		<br>
-                <br><br>
-		<br>
+		
     <div class="mx-md-auto">
 			<div class="card m-md-5">
 				<div class="card-header bg-warning">
-					<h5 class="text-dark">Feedback São Lázaro</h5>
+					<h5 class="text-dark text-center">Feedback São Lázaro</h5>
 				</div>
 				<ul class="list-group list-group-flush">
 					<li class="list-group-item">
-						<div class="card-body d-block">
-							<img class="float-left d-sm-block-inline wds rounded mr-3" src="images/fotos/Animais/Feedback/1.jpg">
-							<p class="card-text">
-								<h6 class="text-light bg-success"> Conseguimos a meta! </h6>
+						<div class="card-body d-sm-inline d-md-flex row">
+                                                    <div class="col-md-4 col-sm-12">
+                                                    <img class="img-thumbnail bg-success rounded mr-3" src="images/fotos/Animais/Feedback/1.jpg">
+                                                    </div>
+                                                    <div class="col-md-8 col-sm-12">
+                                                        <p class="card-text p-0 m-0 mt-sm-2">
+								<h6 class="text-light bg-success"> Meta alcançada! </h6>
 								<br>Conseguimos alcançar nossa meta dessa mês graças ao apoio dos usuários!
                                                                 <br><br> Obrigado para:
                                                                 <br>Miguel
@@ -128,10 +130,10 @@
                                                                 <br>Valentina
                                                                 
 							</p>
-							
+                                                    </div>
 						</div>
 					</li>
-					<li class="list-group-item bg-blue"><a href="feedbacks.jsp" class="text-light">Ver todos</a></li>
+					<li class="list-group-item bg-blue"><a href="feedbacks.jsp" class="btn text-light bg-blue w-100 text-center">Ver todos</a></li>
 				</ul>
 			</div>
 		</div>

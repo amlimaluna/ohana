@@ -149,7 +149,7 @@
                 %>
 			    	<div class="form-group">
  						<label>Marcar entrega</label>
- 						<input type="date" id="agendamento" name="data" max="3000-12-31" min="1000-01-01" class="form-control">
+ 						<input type="text" id="agendamento" name="data" max="3000-12-31" min="1000-01-01" class="form-control">
 					</div>
 
 					<!-- Button trigger modal -->

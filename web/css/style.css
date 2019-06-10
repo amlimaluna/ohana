@@ -78,7 +78,7 @@ background: #ffffff url('images/img.jpg') no-repeat center center;
 .menu-wrapper {
 	position: relative;
 	max-width: 500px;
-	height: 100px; // hide the scroll bar
+	height: 100px; 
 	margin: 1em auto;
 	border: 1px solid black;
 	overflow-x: hidden;
@@ -86,7 +86,7 @@ background: #ffffff url('images/img.jpg') no-repeat center center;
 }
 
 .menu	{
-	height: 120px; // hide the scroll bar
+	height: 120px; 
 	background: #f3f3f3;
 	box-sizing: border-box;
 	

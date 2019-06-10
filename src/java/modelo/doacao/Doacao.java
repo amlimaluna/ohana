@@ -19,13 +19,13 @@ public class Doacao {
     private int id;
     private String usuario_email;
     private List<DoacaoItem> itens;
-    private Date agendar;
+    private String agendar;
 
-    public Date getAgendar() {
+    public String getAgendar() {
         return agendar;
     }
 
-    public void setAgendar(Date agendar) {
+    public void setAgendar(String agendar) {
         this.agendar = agendar;
     }
 

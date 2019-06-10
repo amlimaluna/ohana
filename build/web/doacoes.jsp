@@ -33,16 +33,16 @@
                                       
                         <div>
 				<ul  class="nav m-2">
-				  
+				  <li class="nav-item d-none d-md-block">
+				    <a class="nav-link  text-warning" href="doacoes.jsp">Doar</a>
+				  </li>
 				  <li class="nav-item">
 				    <a class="nav-link text-blue" href="novoUsuario.jsp">cadastrar</a>
 				  </li>
 				  <li class="nav-item">
 				    <a class="rounded nav-link bg-blue text-light" href="login.jsp">login</a>
 				  </li>
-                                  <li class="rounded nav-item d-none bg-white d-md-block px-3 ml-4">
-				    <a class="nav-link  text-light" href="doacoes.jsp">Doar</a>
-				  </li>
+                                  
 				</ul>
 			</div>
                         
@@ -58,16 +58,19 @@
 			</div>
                                
 				<ul  class="nav m-2">
+                                    <li class="nav-item d-none d-md-block">
+				    <a class="nav-link  text-warning" href="doacoes.jsp">Doar</a>
+				  </li>
                                   <li class="nav-item nav-brand d-none d-md-block">
                                     <a class="nav-link text-blue" href="VerRecompensasServlet">Recompensas</a>
                                   </li>
                                   <li class="nav-item nav-brand d-none d-md-block">
-                                    <a class="nav-link text-blue" href="VerDoacaoUsuarioServlet">Agendamentos</a>
+                                    <a class="nav-link text-blue" href="VerDoacaoUsuarioServlet">Minhas Doações</a>
                                   </li>
 				  <li class="nav-brand">
 				  </li>
 				  <li class="nav-item nav-link nav-brand text-blue">
-					<div class="dropdown">
+					  	<div class="dropdown">
 						  <a class="dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						   Teste                                       
 						  </a>
@@ -76,15 +79,13 @@
 						    <button class="dropdown-item" type="button"> <a class="text-blue" href="VerUsuarioServlet"> Perfil </a></button>
 						    <button class="dropdown-item" type="button"> <a class="text-blue" href="LogoutServlet"> Sair</a></button>
 						  </div>
-                                                 </div>
+                                                 </div>   
                                   </li>
 
-                                                  <li class="rounded nav-item d-none bg-secondary d-md-block px-3 ml-4">
-                                                    <a class="nav-link  text-light" href="doacoes.jsp">Doar</a>
-                                                  </li>
+                                                  
 					
 				</ul>
-                                                            </div>
+                                                          
                                    
                                      
                                             </nav>
@@ -95,7 +96,7 @@
 		    <a class="nav-link text-blue" href="VerRecompensasServlet">Recompensas</a>
 		  </li>
 		  <li class="nav-item mx-auto wds5">
-		    <a class="nav-link text-blue" href="VerDoacaoUsuarioServlet">Agendamentos</a>
+		    <a class="nav-link text-blue" href="VerDoacaoUsuarioServlet">Minhas Doações</a>
 		  </li>
 		</ul>
                                   <% } %> 
@@ -104,11 +105,14 @@
 <br>
 		<br>
                 <br> <br>
-
+                <div class="col-md-3 mx-md-auto rounded">
+				<h2 class="text-warning text-center">Doações ativas</h2>
+                                <br>         
+                </div>
 		<!-- Barra de pesquisa-->
 		<div>
-			<form class="">
-			  <div class="form-row col-10 mx-md-auto">
+			<form class="p-0 m-0">
+			  <div class="form-row col-11 col-md-4 mx-md-auto">
 			    <div class="col-9 col-md-10">
 			      <input type="search" class="form-control" placeholder="Digite sua consulta">
 			    </div>
@@ -144,10 +148,8 @@
 
 	<!-- Lista de doações-->
 		<div> 
-			<div class="card-header bg-warning col-md-3 mx-md-auto mb-2 rounded">
-				<h5 class="text-dark text-center">Doações ativas</h5>
-			</div>
-			<div class="dropdown mb-2 d-flex justify-content-center text-light">
+			
+			<div class="dropdown mb-5 d-flex justify-content-center text-light">
 				<!-- Filtro-->
 			  	<a class="dropdown-toggle bg-blue p-2 rounded" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			    	Filtro
@@ -163,10 +165,10 @@
 		</div>
         		<!-- Cards -->
 		<!-- Cards de doação -->
-		<div class="container-fluid padding"> <!-- div container -->
+		<div class="container-fluid padding col-md-7"> <!-- div container -->
 			<div class="row padding">
 				<!-- Card-->
-				<div class="col-md-4">
+				<div class="col-md-6">
 					<div class="card mb-2">
 						<a href="VerDoacoesServlet">
 						  	<img class="card-img-top img-fluid bg-blue" src="images/fotos/Animais/Doações/1.jpg" alt="Card image cap" style="padding: 20px;">
@@ -182,7 +184,7 @@
 				<br>
 
 				<!-- Card-->
-				<div class="col-md-4">
+				<div class="col-md-6">
 					<div class="card mb-2">
 						<a href="VerDoacoesServlet">
 						  	<img class="card-img-top img-fluid bg-blue btn-block" src="images/fotos/Idosos/Doações/1.jpg" alt="Card image cap" style="padding: 20px;">
@@ -199,7 +201,7 @@
 
 
 				<!-- Card-->
-				<div class="col-md-4">
+				<div class="col-md-6">
 					<div class="card mb-2">
 						<a href="VerDoacoesServlet">
 						  	<img class="card-img-top img-fluid bg-blue" src="images/fotos/Crianças/Feedback/2.jpg" alt="Card image cap" style="padding: 20px;">
@@ -215,7 +217,7 @@
 				<br>
 
 				<!-- Card-->
-				<div class="col-md-4">
+				<div class="col-md-6">
 					<div class="card mb-2">
 						<a href="VerDoacoesServlet">
 						  	<img class="card-img-top img-fluid bg-blue" src="images/img.jpg" alt="Card image cap" style="padding: 20px;">
@@ -231,7 +233,7 @@
 				<br>
 
 				<!-- Card-->
-				<div class="col-md-4">
+				<div class="col-md-6">
 					<div class="card mb-2">
 						<a href="VerDoacoesServlet">
 						  	<img class="card-img-top img-fluid bg-blue" src="images/img.jpg" alt="Card image cap" style="padding: 20px;">
@@ -247,7 +249,7 @@
 				<br>
 
 				<!-- Card-->
-				<div class="col-md-4">
+				<div class="col-md-6">
 					<div class="card mb-2">
 						<a href="VerDoacoesServlet">
 						  	<img class="card-img-top img-fluid bg-blue" src="images/fotos/Crianças/Eventos/1.jpg" alt="Card image cap" style="padding: 20px;">

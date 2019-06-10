@@ -27,15 +27,9 @@
 			</div>
 		</nav>
 			
-<ul class="nav nav-tabs navbar-expand bg-light fixed-bottom text-center b-shadow">
-		  <li class="nav-item mx-auto wds5 border-right">
-		    <a class="nav-link text-blue" href="VerRecompensasServlet">Recompensas</a>
-		  </li>
-		  <li class="nav-item mx-auto wds5">
-		    <a class="nav-link text-blue" href="VerDoacaoUsuarioServlet">Agendamentos</a>
-		  </li>
-		</ul>
+
             <br><br><br>
+            
 <div class="card mx-auto" style="width: 18rem;">
 		  <div class="card-header bg-warning">
 		    <h5 style="color: black; text-align: center">Perfil</h5>
@@ -61,7 +55,7 @@
 
 		    <li class="list-group-item">
 		    	<div class="form-group"> <h6 class="card-text">Senha:</h6>
-                            <jsp:getProperty name="usuario" property="senha"/>
+                            <input type="password" value="<jsp:getProperty name="usuario" property="senha"/>"  readonly="readonly" style=" border: 0 none; outline: none " />
   				</div>
   			</li>
 		</ul>

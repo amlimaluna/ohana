@@ -55,7 +55,7 @@
 		    <li class="list-group-item">
 		    	<div class="form-group">
                              <h6 class="card-text">Senha</h6>
-    				<input type="password" class="form-control" id="exampleInputEmail1" name="senha" aria-describedby="emailHelp" value="<%= usuario.getSenha()%>">
+    				<input type="text" class="form-control" id="exampleInputEmail1" name="senha" aria-describedby="emailHelp" value="<%= usuario.getSenha()%>">
   				</div>
   			</li>
 <button class="bg-blue rounded">

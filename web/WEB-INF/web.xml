@@ -88,6 +88,10 @@
         <servlet-name>ListarUsuarioServlet</servlet-name>
         <servlet-class>controle.usuario.ListarUsuarioServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>RemoverCarrinhoDoacoesServlet</servlet-name>
+        <servlet-class>controle.carrinhodoacoes.RemoverCarrinhoDoacoesServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>NovoUsuarioServlet</servlet-name>
         <url-pattern>/NovoUsuarioServlet</url-pattern>
@@ -175,6 +179,10 @@
     <servlet-mapping>
         <servlet-name>ListarUsuarioServlet</servlet-name>
         <url-pattern>/ListarUsuarioServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RemoverCarrinhoDoacoesServlet</servlet-name>
+        <url-pattern>/RemoverCarrinhoDoacoesServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

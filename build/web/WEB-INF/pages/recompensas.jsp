@@ -33,18 +33,18 @@
                             <a class="navbar-brand" href="index.jsp"><img  class="logoohana pl-md-3" src="images/OhanaLogo.png"></a>
 			</div>
                                       
-                        <div>
+                       <div>
 				<ul  class="nav m-2">
-				  
+				  <li class="nav-item d-none d-md-block">
+				    <a class="nav-link  text-warning" href="doacoes.jsp">Doar</a>
+				  </li>
 				  <li class="nav-item">
 				    <a class="nav-link text-blue" href="novoUsuario.jsp">cadastrar</a>
 				  </li>
 				  <li class="nav-item">
 				    <a class="rounded nav-link bg-blue text-light" href="login.jsp">login</a>
 				  </li>
-                                  <li class="rounded nav-item d-none bg-warning d-md-block px-3 ml-4">
-				    <a class="nav-link  text-light" href="doacoes.jsp">Doar</a>
-				  </li>
+                                  
 				</ul>
 			</div>
                         
@@ -60,16 +60,19 @@
 			</div>
                                
 				<ul  class="nav m-2">
+                                    <li class="nav-item d-none d-md-block">
+				    <a class="nav-link  text-warning" href="doacoes.jsp">Doar</a>
+				  </li>
                                   <li class="nav-item nav-brand d-none d-md-block">
                                     <a class="nav-link text-blue" href="VerRecompensasServlet">Recompensas</a>
                                   </li>
                                   <li class="nav-item nav-brand d-none d-md-block">
-                                    <a class="nav-link text-blue" href="VerDoacaoUsuarioServlet">Agendamentos</a>
+                                    <a class="nav-link text-blue" href="VerDoacaoUsuarioServlet">Minhas Doações</a>
                                   </li>
 				  <li class="nav-brand">
 				  </li>
 				  <li class="nav-item nav-link nav-brand text-blue">
-					  <div class="dropdown">
+					  	<div class="dropdown">
 						  <a class="dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						   Teste                                       
 						  </a>
@@ -78,12 +81,10 @@
 						    <button class="dropdown-item" type="button"> <a class="text-blue" href="VerUsuarioServlet"> Perfil </a></button>
 						    <button class="dropdown-item" type="button"> <a class="text-blue" href="LogoutServlet"> Sair</a></button>
 						  </div>
-                                                 </div>
+                                                 </div>   
                                   </li>
 
-                                                  <li class="rounded nav-item d-none bg-warning d-md-block px-3 ml-4">
-                                                    <a class="nav-link  text-light" href="doacoes.jsp">Doar</a>
-                                                  </li>
+                                                  
 					
 				</ul>
                                                             </div>
@@ -97,7 +98,7 @@
 		    <a class="nav-link text-blue" href="VerRecompensasServlet">Recompensas</a>
 		  </li>
 		  <li class="nav-item mx-auto wds5">
-		    <a class="nav-link text-blue" href="VerDoacaoUsuarioServlet">Agendamentos</a>
+		    <a class="nav-link text-blue" href="VerDoacaoUsuarioServlet">Minhas Doações</a>
 		  </li>
 		</ul>
                                   <% } %>   <br><br><br> <br>

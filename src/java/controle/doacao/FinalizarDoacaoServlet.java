@@ -6,8 +6,6 @@
 package controle.doacao;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.sql.Date;
 import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.Cookie;
@@ -32,6 +30,7 @@ protected void service(HttpServletRequest request, HttpServletResponse response)
         HttpSession session = request.getSession();
         String usuarioEmail = (String) session.getAttribute("email");
         String data = request.getParameter("data");
+    
         System.out.println("#### " + data);
         
         String cookieValor = "";
@@ -61,12 +60,12 @@ protected void service(HttpServletRequest request, HttpServletResponse response)
         }
         
         if (sucesso) {
-            request.setAttribute("mensagem", "Doacão marcada com sucesso! Aproveite e volte sempre.");
+            request.setAttribute("mensagem", "Doação marcada com sucesso! Aproveite e volte sempre.");
             cookie.setValue("");
             response.addCookie(cookie);
             request.getRequestDispatcher("VerDoacaoUsuarioServlet").forward(request, response);
          } else {
-            request.setAttribute("mensagem", "Não foi possível marcar essa docao.");
+            request.setAttribute("mensagem", "Não foi possível marcar essa doção.");
             request.getRequestDispatcher("index.jsp").forward(request, response);
         }
     }

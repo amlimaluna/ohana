@@ -59,7 +59,7 @@ public class VerDoacoesServlet extends HttpServlet {
         
   
         
-        RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/pages/doacoes/doarteste.jsp");
+        RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/pages/doacoes/vamosdoar.jsp");
         rd.forward(request, response);
     }
 
